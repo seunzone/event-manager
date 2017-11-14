@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Manager</title>
+  <link rel="stylesheet" href="css/bootstrap.css"  >
+  <link rel="stylesheet" href="css/font-awesome.min.css" >
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+  <body>
+    <header>
+      <div class="container">
+
+          <nav class="navbar navbar-dark navbar-expand-lg justify-content-between sticky">
+              <div class="brand">
+    
+                <a href="index.html" class="navbar-brand"><img src="logo.png"></a>
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+    
+              <div class="navbar-collapse collapse dual-nav">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Explore Centers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Upcoming Events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Register</a>
+                      </li>
+                    </ul>
+              </div>
+            </nav>
+
+        <div class="jumbotron text-center">
+          <div class="row" style="margin-top: -80px;">
+             <div class="col-lg-6">
+              <h2 class="display-3">Welcome to Event Manager</h2>
+              <p>See and post amazing events in your area.</p>
+              <button class="btn btn-primary" type="submit">View Upcoming Events</button>
+            </div><div class="col-lg-2"></div>
+             <div class="col-lg-4">
+                <div class="card bg-primary text-center card-form">
+                    <div class="card-body">
+                        <h3>Sign In</h3>
+                        <h6 class="font-weight-light">Log into your account</h6>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Username">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-lg" placeholder="Password">
+                            </div>
+                           
+                            <input type="submit" value="Login" class="btn btn-outline-dark btn-block">
+                        </form><hr>
+                        <h6 class="font-weight-light">Yet to have an Account? <a href="#" class="text-white"><strong>Sign Up</strong></a></h6>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+        </div>
+
+
+    </header>
+
+    <section class="container title">
+      <h3>Popular Events</h3>
+      <hr/>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <!-- ======================= -->
+    <section class="container event">
+
+      <div class="row card-deck">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="view overlay hm-white-slight">
+              <img class="card-img-top" src="img/tech.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">forLoop Nigeria Meetup</h4>
+                <hr/>
+              </a>
+              <p class="card-text">Lorem ispum lorem ispum lorem ispim lorem ispum lorem ispim lorem sosos fmffmfnod kdoe lorem ispum lorem ispulm
+                lssumr.
+              </p>
+
+              <p class="author">Location
+                <span>Musun Center</span>
+              </p>
+              <div class="seeButton">
+               
+                <a class="btn btn-outline-info"> See More</a>
+              </div>
+            </div>
+      
+            <div class="card-data">
+              <ul align="center">
+                <li>
+                   05/10/2017
+                <li>
+              </ul>
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+
+        <div class="col-md-4"> 
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                  <img class="card-img-top" src="img/braz.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <a href="#">
+                    <h4 class="card-title">Brazillian Festival</h4>
+                    <hr/>
+                  </a>
+                  <p class="card-text">Lorem ispum lorem ispum lorem ispim lorem ispum lorem ispim lorem sosos fmffmfnod kdoe lorem ispum lorem ispulm
+                    lssumr.
+                  </p>
+    
+                  <p class="author">Location
+                <span>Lagos Beach</span>
+              </p>
+              <div class="seeButton">
+                <a class="btn btn-outline-info"> See More</a>
+              </div>
+            </div>
+                <div class="card-data">
+                  <ul>
+                    <li>
+                   05/10/2017
+                    <li>
+                  </ul>
+                </div>
+              </div>
+
+        </div>
+        <!-- Card -->
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                  <img class="card-img-top" src="img/cocktail.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <a href="#">
+                    <h4 class="card-title">Cocktail Party</h4>
+                    <hr/>
+                  </a>
+                  <p class="card-text">Lorem ispum lorem ispum lorem ispim lorem ispum lorem ispim lorem sosos fmffmfnod kdoe lorem ispum lorem ispulm
+                    lssumr.
+                  </p>
+    
+                   <p class="author">Location
+                <span>EPIC Tower</span>
+              </p>
+                   <div class="seeButton">
+                  <a class="btn btn-outline-info"> See More</a>
+                 </div>
+                </div>
+          
+                <div class="card-data">
+                  <ul>
+                    <li>
+                   05/10/2017
+                    <li>
+                  </ul>
+                </div>
+    
+              </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- End of Upcoming Events -->
+
+    
+   
+  
+  
+  
+      
+
+    <section class="cta text-center">
+      <h3>Do you want to host an event</h3>
+      <p>Let's give you the ideal space and publicity</p>
+      <a type="button" href="#" class="btn btn-primary btn-lg eventButton">Sign Up</a>
+    </section>
+
+
+    <footer>
+      <div class="container ">
+        <div class="row">
+          <div class="col">
+            <p class="text-center">&#169; 2017, All rights reserved. <br><a href="#">Events Manager</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+
+  </body>
+
+</html>
