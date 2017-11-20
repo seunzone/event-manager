@@ -35,12 +35,6 @@
                       <li class="nav-item">
                         <a class="nav-link" href="events.html">Upcoming Events</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Register</a>
-                      </li>
                     </ul>
               </div>
             </nav>
@@ -68,7 +62,7 @@
                            
                             <input type="submit" value="Login" class="btn btn-outline-dark btn-block">
                         </form><hr>
-                        <h6 class="font-weight-light">Yet to have an Account? <a href="#" class="text-white"><strong>Sign Up</strong></a></h6>
+                        <h6 class="font-weight-light">Yet to have an Account? <a href="#" class="text-white" data-toggle="modal" data-target="#signUpModal"><strong>Sign Up</strong></a></h6>
                     </div>
                 </div>
             </div>
@@ -102,17 +96,15 @@
                 <h4 class="card-title">Ventures Park</h4>
                 <hr/>
               </a>
-
-              <p class="author">Location
+              <p class="author"><i class="fa fa-map-marker" aria-hidden="true"></i>                
                 <span>Abuja, Nigeria</span>
               </p>
-
-              <p class="author">Capacity
-                <span>500</span>
+              <p class="author"><i class="fa fa-users" aria-hidden="true"></i>                
+                <span>500 People</span>
               </p>
               <div class="seeButton">
                
-                <a class="btn btn-outline-info"> See More</a>
+                <a href="centerfeeds.html" class="btn btn-outline-info"> See More</a>
               </div>
             </div>
 
@@ -131,16 +123,14 @@
                     <h4 class="card-title">Hotels.ng</h4>
                     <hr/>
                   </a>
-                 
-    
-                  <p class="author">Location
-                <span>Yaba, Lagos</span>
-              </p>
-              <p class="author">Capacity
-                <span>10,000</span>
-              </p>
+                    <p class="author"><i class="fa fa-map-marker" aria-hidden="true"></i>                
+                      <span>Yaba, Lagos</span>
+                    </p>
+                    <p class="author"><i class="fa fa-users" aria-hidden="true"></i>                
+                      <span>2000 People</span>
+                    </p>
               <div class="seeButton">
-                <a class="btn btn-outline-info"> See More</a>
+                <a href="centerfeeds.html" class="btn btn-outline-info"> See More</a>
               </div>
             </div>
                 
@@ -160,22 +150,17 @@
                     <hr/>
                   </a>
                 
-    
-                   <p class="author">Location
-                <span>Along Oshodi, Lagos</span>
-              </p>
-
-              <p class="author">Capacity
-                <span>100,000</span>
-              </p>
+                  <p class="author"><i class="fa fa-map-marker" aria-hidden="true"></i>                
+                    <span>Oshodi, Lagos</span>
+                  </p>
+                  <p class="author"><i class="fa fa-users" aria-hidden="true"></i>                
+                    <span>50000 People</span>
+                  </p>
                    <div class="seeButton">
-                  <a class="btn btn-outline-info"> See More</a>
+                  <a href="centerfeeds.html" class="btn btn-outline-info"> See More</a>
                  </div>
                 </div>
-          
-    
               </div>
-
         </div>
       </div>
 
@@ -208,23 +193,17 @@
                 lssumr.
               </p>
 
-              <p class="author">Location
-                <span>Musun Center</span>
+              <p>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  Musun Center
               </p>
+             <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              05/10/2017</p>
               <div class="seeButton">
                
                 <a href="events.html" class="btn btn-outline-info"> See More</a>
               </div>
             </div>
-      
-            <div class="card-data">
-              <ul align="center">
-                <li>
-                   05/10/2017
-                <li>
-              </ul>
-            </div>
-
           </div>
           <!--/.Card-->
 
@@ -244,21 +223,17 @@
                     lssumr.
                   </p>
     
-                  <p class="author">Location
-                <span>Lagos Beach</span>
-              </p>
+                  <p>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      Lagos Beach
+                  </p>
+                 <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                  05/10/2017</p>
               <div class="seeButton">
                 <a href="events.html" class="btn btn-outline-info"> See More</a>
               </div>
             </div>
-                <div class="card-data">
-                  <ul>
-                    <li>
-                   05/10/2017
-                    <li>
-                  </ul>
-                </div>
-              </div>
+          </div>
 
         </div>
         <!-- Card -->
@@ -276,21 +251,15 @@
                   <p class="card-text">Lorem ispum lorem ispum lorem ispim lorem ispum lorem ispim lorem sosos fmffmfnod kdoe lorem ispum lorem ispulm
                     lssumr.
                   </p>
-    
-                   <p class="author">Location
-                <span>EPIC Tower</span>
-              </p>
+                  <p>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      Musun Center
+                  </p>
+                 <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                  05/10/2017</p>
                    <div class="seeButton">
                   <a href="events.html" class="btn btn-outline-info"> See More</a>
                  </div>
-                </div>
-          
-                <div class="card-data">
-                  <ul>
-                    <li>
-                   05/10/2017
-                    <li>
-                  </ul>
                 </div>
     
               </div>
@@ -326,6 +295,48 @@
       </div>
     </footer>
 
+
+    <!-- Signup MODAL -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                  <label for="Name">Name</label>
+                <input type="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                  <label for="username">Username</label>
+                <input type="name" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                  <label for="email address">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              
+              <div class="form-group">
+                  <label for="password">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+
+              <div class="form-group">
+                  <label for="confirm password">Confirm Password</label>
+                <input type="password" class="form-control" placeholder="Re-enter Password">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signup modal ends here -->
 
     <script src="js/jquery.min.js" ></script>
     <script src="js/popper.min.js" ></script>
