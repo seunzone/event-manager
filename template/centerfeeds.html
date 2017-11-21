@@ -35,10 +35,10 @@
                     <a class="nav-link" href="events.html">Upcoming Events</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#loginModal"><strong></strong>Login</strong></button>
+                  </li>&nbsp;&nbsp;&nbsp;
                   <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Register</a>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#signUpModal"><strong></strong>Sign Up</strong></button>
                   </li>
             </ul>
           </div>
@@ -222,6 +222,79 @@
     <script src="js/jquery.min.js" ></script>
     <script src="js/popper.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>
+    
+<!-- login MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+              <label for="UserName">Username</label>
+            <input type="name" class="form-control" placeholder="Name">
+          </div>
+          
+          <div class="form-group">
+              <label for="password">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Signup modal ends here -->
+
+
+
+  <!-- Signup MODAL -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+                <label for="Name">Name</label>
+              <input type="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+              <input type="name" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="email address">Email Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirm password">Confirm Password</label>
+              <input type="password" class="form-control" placeholder="Re-enter Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Signup modal ends here -->
 
   </body>
 
