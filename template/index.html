@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Manager</title>
+  <link rel="stylesheet" href="css/bootstrap.css"  >
+  <link rel="stylesheet" href="css/font-awesome.min.css" >
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+  <body>
+    <header>
+      <div class="container">
+
+          <nav class="navbar navbar-dark navbar-expand-lg justify-content-between sticky">
+              <div class="brand">
+    
+                <a href="index.html" class="navbar-brand"><img src="img/logo.png"></a>
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+    
+              <div class="navbar-collapse collapse dual-nav">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="centerfeeds.html">Explore Centers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="events.html">Upcoming Events</a>
+                      </li>
+                    </ul>
+              </div>
+            </nav>
+
+        <div class="jumbotron text-center">
+          <div class="row" style="margin-top: -80px;">
+             <div class="col-lg-6">
+              <h2 class="display-3">Welcome to Event Manager</h2>
+              <p>See and post amazing events in your area.</p>
+              <button class="btn btn-primary" type="submit">View Upcoming Events</button>
+            </div><div class="col-lg-2"></div>
+             <div class="col-lg-4">
+                <div class="card bg-primary text-center card-form">
+                    <div class="card-body">
+                        <h3>Sign In</h3>
+                        <h6 class="font-weight-light">Log into your account</h6>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Username">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-lg" placeholder="Password">
+                            </div>
+                           
+                            <input type="submit" value="Login" class="btn btn-outline-dark btn-block">
+                        </form><hr>
+                        <h6 class="font-weight-light">Yet to have an Account? <a href="#" class="text-white" data-toggle="modal" data-target="#signUpModal"><strong>Sign Up</strong></a></h6>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+        </div>
+
+
+    </header>
+<!-- ========== End of Header =========== -->
+
+
+<!-- ========== Start of POpular Centers =========== -->
+<section class="container title">
+      <h3>Popular Event Centres</h3>
+      <hr/>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <!-- ======================= -->
+    <section class="container event">
+
+      <div class="row card-deck">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="view overlay hm-white-slight">
+              <img class="card-img-top" src="img/place1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Ventures Park</h4>
+                <hr/>
+              </a>
+              <p class="author"><i class="fa fa-map-marker" aria-hidden="true"></i>                
+                <span>Abuja, Nigeria</span>
+              </p>
+              <p class="author"><i class="fa fa-users" aria-hidden="true"></i>                
+                <span>500 People</span>
+              </p>
+              <div class="seeButton">
+               
+                <a href="centerfeeds.html" class="btn btn-outline-info"> See More</a>
+              </div>
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+
+        <div class="col-md-4"> 
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                  <img class="card-img-top" src="img/place2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <a href="#">
+                    <h4 class="card-title">Hotels.ng</h4>
+                    <hr/>
+                  </a>
+                    <p class="author"><i class="fa fa-map-marker" aria-hidden="true"></i>                
+                      <span>Yaba, Lagos</span>
+                    </p>
+                    <p class="author"><i class="fa fa-users" aria-hidden="true"></i>                
+                      <span>2000 People</span>
+                    </p>
+              <div class="seeButton">
+                <a href="centerfeeds.html" class="btn btn-outline-info"> See More</a>
+              </div>
+            </div>
+                
+              </div>
+
+        </div>
+        <!-- Card -->
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                  <img class="card-img-top" src="img/place3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <a href="#">
+                    <h4 class="card-title">EPIC Tour</h4>
+                    <hr/>
+                  </a>
+                
+                  <p class="author"><i class="fa fa-map-marker" aria-hidden="true"></i>                
+                    <span>Oshodi, Lagos</span>
+                  </p>
+                  <p class="author"><i class="fa fa-users" aria-hidden="true"></i>                
+                    <span>50000 People</span>
+                  </p>
+                   <div class="seeButton">
+                  <a href="centerfeeds.html" class="btn btn-outline-info"> See More</a>
+                 </div>
+                </div>
+              </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- End of Popular Enters -->
+    <!-- ======================= -->
+
+
+    <section class="container title">
+      <h3>Upcoming Events</h3>
+      <hr/>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <!-- ======================= -->
+    <section class="container event">
+
+      <div class="row card-deck">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="view overlay hm-white-slight">
+              <img class="card-img-top" src="img/tech.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="card-body">
+              <a href="events.html">
+                <h4 class="card-title">forLoop Nigeria Meetup</h4>
+                <hr/>
+              </a>
+              <p class="card-text">Lorem ispum lorem ispum lorem ispim lorem ispum lorem ispim lorem sosos fmffmfnod kdoe lorem ispum lorem ispulm
+                lssumr.
+              </p>
+
+              <p>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  Musun Center
+              </p>
+             <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              05/10/2017</p>
+              <div class="seeButton">
+               
+                <a href="events.html" class="btn btn-outline-info"> See More</a>
+              </div>
+            </div>
+          </div>
+          <!--/.Card-->
+
+        </div>
+
+        <div class="col-md-4"> 
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                  <img class="card-img-top" src="img/braz.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <a href="events.html">
+                    <h4 class="card-title">Brazillian Festival</h4>
+                    <hr/>
+                  </a>
+                  <p class="card-text">Lorem ispum lorem ispum lorem ispim lorem ispum lorem ispim lorem sosos fmffmfnod kdoe lorem ispum lorem ispulm
+                    lssumr.
+                  </p>
+    
+                  <p>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      Lagos Beach
+                  </p>
+                 <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                  05/10/2017</p>
+              <div class="seeButton">
+                <a href="events.html" class="btn btn-outline-info"> See More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Card -->
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="view overlay hm-white-slight">
+                  <img class="card-img-top" src="img/cocktail.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <a href="events.html">
+                    <h4 class="card-title">Cocktail Party</h4>
+                    <hr/>
+                  </a>
+                  <p class="card-text">Lorem ispum lorem ispum lorem ispim lorem ispum lorem ispim lorem sosos fmffmfnod kdoe lorem ispum lorem ispulm
+                    lssumr.
+                  </p>
+                  <p>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      Musun Center
+                  </p>
+                 <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                  05/10/2017</p>
+                   <div class="seeButton">
+                  <a href="events.html" class="btn btn-outline-info"> See More</a>
+                 </div>
+                </div>
+    
+              </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- End of Upcoming Events -->
+
+    
+   
+  
+  
+  
+      
+
+    <section class="cta text-center">
+      <h3>Do you want to host an event</h3>
+      <p>Let's give you the ideal space and publicity</p>
+      <a type="button" href="#" class="btn btn-primary btn-lg eventButton">Sign Up</a>
+    </section>
+
+
+    <footer>
+      <div class="container ">
+        <div class="row">
+          <div class="col">
+            <p class="text-center">&#169; 2017, All rights reserved. <br><a href="#">Events Manager</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+
+    <!-- Signup MODAL -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                  <label for="Name">Name</label>
+                <input type="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                  <label for="username">Username</label>
+                <input type="name" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                  <label for="email address">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              
+              <div class="form-group">
+                  <label for="password">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+
+              <div class="form-group">
+                  <label for="confirm password">Confirm Password</label>
+                <input type="password" class="form-control" placeholder="Re-enter Password">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signup modal ends here -->
+
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+
+  </body>
+
+</html>

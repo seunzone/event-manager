@@ -1,0 +1,280 @@
+body{
+  font-family: 'Open Sans', sans-serif;  
+}
+header {
+  background: url(../img/front.jpg) no-repeat;
+  background-size: contain;
+  opacity: 0.9;
+}
+
+/* .nav-item a {
+  color: #ffffff;
+  border: 2px solid white;
+  margin: 0.2rem;
+  border-radius: 5px;
+} */
+
+.navbar .nav .nav-item a {
+  color: #ffffff;
+  /* border: 2px solid white; */
+  margin: 0.2rem;
+  border-radius: 5px;
+}
+
+.navbar .nav .nav-item a:hover {
+  color: #1fbbef;
+  /* border: 2px solid #1fbbef;; */
+}
+
+
+.brand a {
+  font-size: 3.5em;
+  font-family: "Lobster", cursive;
+  color: #1fbbef !important;
+}
+
+.jumbotron {
+  padding: 7rem 5rem;
+  background-color: transparent;
+  color: #ffffff;
+}
+.jumbotron h2 {
+  font-size: 3em;
+}
+
+.jumbotron p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.eventButton {
+  background-color: #1fbbef;
+  border-color: #1fbbef;
+}
+
+.event {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vote .btn-outline-primary:hover {
+  background-color: #1fbbef;
+  color: white;
+  border:none;
+}
+
+.btn-primary:hover {
+  background-color:#78d6f5 ;
+  
+}
+
+.card {
+  box-shadow: 0 2px 6px -2px rgba(22, 22, 22, 0.45);
+  border-radius: 2px;
+}
+
+.card .btn-action {
+  margin: -23px 20px -23px auto;
+  background-color: #1fbbef;
+  height: 47px;
+  width: 47px;
+  line-height: 0;
+}
+
+.card .btn-action :hover {
+  background-color: grey;
+}
+  
+
+.btn-floating {
+  z-index: 1;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 50%;
+
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .btn-action .fa.fa-chevron-right {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.btn-floating i {
+  width: inherit;
+  font-size: 1.25rem;
+  line-height: 47px;
+  text-align: center;
+}
+
+.btn-floating i {
+  display: inline-block;
+  color: #fff;
+}
+
+.card .card-data {
+  background-color: #1fbbef;
+  color: #fff;
+  /* text-align: center; */
+  height: auto;
+  padding: 10px 0px;
+}
+
+.card .card-data ul {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.card .card-data ul li {
+  display: inline;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 0
+}
+
+hr {
+  border-top: 1px solid #d9d9d9;
+}
+
+.cta {
+  background-color: #f8f9fd;
+
+  padding: 3rem;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* line-height: 60px; */
+  /* background-color: #f5f5f5; */
+}
+
+.main {
+  padding: 3rem;
+  padding-bottom: 5rem; 
+  background-color: #f7f5f2;
+}
+
+.registeration {
+  padding: 5rem;
+}
+
+.form-header {
+  
+}
+
+.form-header span {
+  color: #1fbbef;
+}
+
+.search {
+  margin: 2rem auto 2rem auto;
+}
+
+.author {
+  font-style: italic;
+  font-size: 0.9em;
+}
+.author span {
+  font-weight: bold;
+}
+
+.seeButton {
+  text-align: center;
+}
+
+main {
+  margin: 2rem;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section .section-heading {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-description {
+  color: #757575;
+  margin-bottom: 4rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.author-box {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.profileEvent{
+  margin: 5rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .jumbotron {
+    padding: 0;
+    padding-top: 5rem 2rem;
+  }
+  .jumbotron h2 {
+    font-size: 2em;
+  }
+
+  .registeration {
+    padding: 1rem;
+    margin: -25px;
+  }
+
+  .brand a {
+    font-size: 2em;
+  }
+
+  footer .brand a {
+    font-size: 2em !important;
+    text-decoration: none;
+    margin: auto;
+  }
+
+  .section-description {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .section .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .jumbotron p {
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+  .profileEvent{
+    margin: 0;
+  }
+}
