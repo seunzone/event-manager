@@ -8,7 +8,8 @@ db.events = [
   date: '10-10-17',
   time: '10-30-am',
   venue: 'EPIC Tower',
-  details: 'Random text user writes about the event'
+  details: 'Random text user writes about the event',
+  centerId: 1
 },
 {
     id: 2,
@@ -17,7 +18,8 @@ db.events = [
     date: '20-12-17',
     time: '11-00-pm',
     venue: 'Zoza Hotels and suites',
-    details: 'Random text user writes about the event'
+    details: 'Random text user writes about the event',
+    centerId: 2
 },
 {
     id: 3,
@@ -26,7 +28,9 @@ db.events = [
     date: '13-11-17',
     time: '09-30-pm',
     venue: 'Lagos Open Field',
-    details: 'Random text user writes about the event'
+    details: 'Random text user writes about the event',
+    myCenterId: 113,
+    centerId: 3
 }
 
 ];
