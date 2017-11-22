@@ -4,7 +4,8 @@
   "description": "This App allows client post events online and also grants admin access level to the site administrators to smoothly run the the site.",
   "main": "server/app.js",
   "scripts": {
-    "start": "babel-watch server/app.js"
+    "start": "babel-watch server/app.js",
+    "test": "mocha server/test/*.js --exit --require babel-register --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "eslint": "^4.11.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1"
   }
 }

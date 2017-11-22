@@ -37,8 +37,8 @@ class Event {
         event: newEvent
       });
   }
-   
- /**
+
+  /**
    * edit event
    * @param {object} req expres req object
    * @param {object} res exp res object
@@ -70,7 +70,7 @@ class Event {
     return res.status(404).send(`event with id ${id} not found`);
   }
 
-   /**
+  /**
    * delete event
    * @param {object} req expres req object
    * @param {object} res exp res object
@@ -91,7 +91,6 @@ class Event {
       }
     });
   }
-
 }
 
 const event = new Event();
