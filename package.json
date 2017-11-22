@@ -1,0 +1,37 @@
+{
+  "name": "event-manager",
+  "version": "1.0.0",
+  "description": "This App allows client post events online and also grants admin access level to the site administrators to smoothly run the the site.",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "babel-watch server/app.js",
+    "babel-node": "babel-node --",
+    "build": "./node_modules/.bin/babel server -d build",
+    "dist": "./node_modules/.bin/babel server -d dist --presets=babili"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seunzone/event-manager.git"
+  },
+  "author": "@seunzone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seunzone/event-manager/issues"
+  },
+  "homepage": "https://github.com/seunzone/event-manager#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "babili": "^0.1.4",
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "express": "^4.16.2",
+    "volleyball": "^1.4.1"
+  }
+}
