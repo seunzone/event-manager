@@ -77,6 +77,20 @@ class Event {
    * @returns {json} json
    * @memberof EventController
    */
+  deleteEvent(req, res) {
+    for (let i = 0; i < db.events.length; i += 1) {
+      if (parseInt(db.events[i].id, 10) === parseInt(req.params.id, 10)) {
+        db.events.splice(i, 1);
+        return res.status(200)
+          .json({
+            status: 'success',
+            message: 'Event has been deleted'
+          });
+      }
+    }
+    return res.status(404)
+      .send('Event not found');
+  }
 }
 
 const event = new Event();
