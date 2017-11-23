@@ -5,6 +5,9 @@
   "main": "server/app.js",
   "scripts": {
     "start": "babel-watch server/app.js",
+    "babel-node": "babel-node --",
+    "build": "./node_modules/.bin/babel server -d build",
+    "dist": "./node_modules/.bin/babel server -d dist --presets=babili",
     "test": "mocha server/test/*.js --exit --require babel-register --reporter spec",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "coveralls": "nyc npm test&& nyc report --reporter=text-lcov | coveralls"
