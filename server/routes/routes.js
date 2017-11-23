@@ -15,7 +15,8 @@ const routes = (app) => {
   app.delete('/api/v1/event/:id', Event.deleteEvent); // deletes event
   app.post('/api/v1/center', Validator.addCenterValidator, Center.addCenter);// Post Events
   app.put('/api/v1/center/:id', Center.editCenter); // Modifies center
-  app.get('/api/v1/center', Center.getAllCenters); // Modifies center
+  app.get('/api/v1/center', Center.getAllCenters); // details of all centers
+  app.get('/api/v1/center/:id', Center.getCenterById); // get all centers
 };
 
 export default routes;

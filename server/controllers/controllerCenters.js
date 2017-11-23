@@ -70,7 +70,7 @@ class Center {
 
   /**
    *
-   * get centers
+   * get details of all centers
    * @param {any} req
    * @param {any} res
    * @returns {json}gets all centers
@@ -81,6 +81,28 @@ class Center {
       centers: db.centers,
       status: 'success'
     });
+}
+/**
+   *
+   *get all centres
+   * @param {any} req
+   * @param {any} res
+   * @returns {json}gets all centers
+   * @memberof centers
+   */
+  getCenterById(req, res) {
+    for (let i = 0; i < db.centers.length; i++) {
+      if (db.centers[i].id === parseInt(req.params.id, 10)) {
+        return res.json({
+          center: db.centers[i],
+          message: 'success',
+          error: false
+        });
+      }
+    }
+    res
+      .status(404)
+      .json({ message: 'Error! Center not found', error: true });
 }
 }
 
