@@ -77,20 +77,6 @@ class Event {
    * @returns {json} json
    * @memberof EventController
    */
-  deleteEvent(req, res) {
-    const { id } = req.params;
-
-    db.events.forEach((event) => {
-      if (event.id === parseInt(id, 10)) {
-        const newEvent = db.events.filter(data => data.id !== parseInt(id, 10));
-        return res.status(200).json({
-          status: 'success',
-          message: 'Eventdeleted',
-          recipe: newEvent
-        });
-      }
-    });
-  }
 }
 
 const event = new Event();
