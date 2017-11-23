@@ -3,5 +3,23 @@
 # event-manager
 This App allows client post events online and also grants admin access level to the site administrators to smoothly run the the site.
 
-# View Demo
+## Install Dependencies
+
+```bash
+npm install 
+```
+
+## Run Test
+
+```bash
+npm run test
+```
+
+## Check for Coverage
+
+```bash
+npm run coveralls
+```
+
+# View UI
 [click here](https://seunzone.github.io/event-manager/template)
