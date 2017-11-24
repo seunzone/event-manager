@@ -14,12 +14,8 @@ npm install
 ```bash
 npm run test
 ```
-
-## Check for Coverage
-
-```bash
-npm run coveralls
-```
+## Test API endpoints here
+[click here](https://andela-event-manager.herokuapp.com)
 
 # View UI
 [click here](https://seunzone.github.io/event-manager/template)
