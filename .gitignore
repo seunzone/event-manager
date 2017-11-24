@@ -2,3 +2,5 @@
 node_modules 
 #Nyc_folder
 .nyc_output
+#Coverage_folder
+coverage
