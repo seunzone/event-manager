@@ -37,6 +37,20 @@ class Event {
         event: newEvent
       });
   }
+  /**
+   *
+   * get details of all events
+   * @param {any} req
+   * @param {any} res
+   * @returns {json}gets all events
+   * @memberof centers
+   */
+  getAllEvents(req, res) {
+    res.status(200).json({
+      events: db.events,
+      status: 'success'
+    });
+  }
 
   /**
    * edit event

@@ -11,6 +11,7 @@ const routes = (app) => {
       .send('Welcome to the event-manager api');
   });
   app.post('/api/v1/event', Validator.addEventValidator, Event.addEvent);// Post Events
+  app.get('/api/v1/event', Event.getAllEvents);// Get Events
   app.put('/api/v1/event/:id', Event.editEvent); // Modifies event
   app.delete('/api/v1/event/:id', Event.deleteEvent); // deletes event
   app.post('/api/v1/center', Validator.addCenterValidator, Center.addCenter);// Post Events
