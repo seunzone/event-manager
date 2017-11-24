@@ -1,3 +1,5 @@
+import validator from 'validator';
+
 /**
  *
  *
@@ -12,67 +14,64 @@ class Validator {
      * @returns {json} validate adding event
      * @memberof Event
      */
-    addEventValidator(req, res, next) {
-      const {
-        userId, title, date, time, venue, details
-      } = req.body;
-  
-      if (!userId) {
+  addEventValidator(req, res, next) {
+    const {
+      title, date, time, venue, details
+    } = req.body;
+    const errors = {};
+    if (title === undefined || date === undefined || time === undefined
+       || venue === undefined || details === undefined) {
+      res.status(400)
+        .json({
+          message: 'All or some of the field is/are undefined',
+        });
+    } else {
+      // check for title
+      if (!validator.isEmpty(title)) {
+        if (!validator.isAlpha(title)) {
+          errors.title = 'Title of event must contain only alphabets';
+        }
+      } else {
+        errors.title = 'Title of event is required';
+      }
+
+      // check for date
+      if (validator.isEmpty(date)) {
+        errors.date = 'Date of event is required';
+      }
+
+      // check for time
+      if (validator.isEmpty(time)) {
+        errors.time = 'Time of event is required';
+      }
+
+      // check for venue
+      if (!validator.isEmpty(venue)) {
+        if (!validator.isLength(venue, { min: 3, max: 30 })) {
+          errors.venue = 'Venue should be between 3 to 30 letters';
+        }
+      } else {
+        errors.venue = 'Venue of event is required';
+      }
+
+      // check for venue
+      if (!validator.isEmpty(details)) {
+        if (!validator.isLength(details, { min: 10, max: 50 })) {
+          errors.details = 'Details must be between 10 and 50 characters';
+        }
+      } else {
+        errors.details = 'Venue of event is required';
+      }
+      if (Object.keys(errors).length !== 0) {
         return res.status(400)
-          .send('Event should have a owner and must be a number');
-      } else if (!title) {
-        return res.status(400)
-          .send('Event must have a title');
-      } else if (date.length < 8 || date.length > 10) {
-        return res.status(400)
-          .send('Event must have a date and in this format dd/mm/yy');
-      } else if (time.length < 8 || time.length > 10) {
-        return res.status(400)
-          .send('Enter correct time format like this hr:mn:am');
-      } else if (!venue) {
-        return res.status(400)
-          .send('Event must have a venue');
-      } else if (details.trim().length < 5) {
-        return res.status(400)
-          .send('Event cannot have less than 5 characters');
+          .json(errors);
       } next();
     }
-  
-    /**
-     *
-     *
-     * @param {any} req
-     * @param {any} res
-     * @returns {json} validate adding new center
-     * @memberof Event
-     */
-    addCenterValidator(req, res, next) {
-      const {
-        centerId, capacity, location, features, description
-      } = req.body;
-  
-      if (!centerId || typeof centerId === 'number') {
-        return res.status(400)
-          .send('Center should have a centerID and it must be a number');
-      } else if (!capacity || typeof capacity === 'number') {
-        return res.status(400)
-          .send('Enter capacity detail in number format');
-      } else if (!location) {
-        return res.status(400)
-          .send('Center must have a location');
-      } else if (!features) {
-        return res.status(400)
-          .send('center should have features');
-      } else if (!description) {
-        return res.status(400)
-          .send('Center must have descriptions');
-      } next();
-    }
-  
-  
   }
-  
-  const validate = new Validator();
-  
-  export default validate;
-  
+}
+
+
+const validate = new Validator();
+
+export default validate;
+

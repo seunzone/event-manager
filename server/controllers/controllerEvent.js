@@ -16,13 +16,12 @@ class Event {
    */
   addEvent(req, res) {
     const {
-      userId, title, date, time, venue, details
+      title, date, time, venue, details
     } = req.body;
 
     const id = db.events.length + 1;
     const newEvent = {
       id,
-      userId,
       title,
       date,
       time,
@@ -78,7 +77,7 @@ class Event {
       return res.status(200).json({
         status: 'success',
         message: 'Event modified',
-        recipe: editEvent
+        event: editEvent
       });
     }
     return res.status(404).send(`event with id ${id} not found`);
