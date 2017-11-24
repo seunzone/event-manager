@@ -15,13 +15,12 @@ class Center {
        */
   addCenter(req, res) {
     const {
-      centerId, capacity, location, features, description
+      capacity, location, features, description
     } = req.body;
 
     const id = db.centers.length + 1;
     const newCenter = {
       id,
-      centerId,
       capacity,
       location,
       features,

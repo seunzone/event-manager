@@ -12,7 +12,7 @@ class Validator {
      * @param {any} req
      * @param {any} res
      * @returns {json} validate adding event
-     * @memberof Event
+     * @memberof Validator
      */
   addEventValidator(req, res, next) {
     const {
@@ -62,6 +62,70 @@ class Validator {
       } else {
         errors.details = 'Venue of event is required';
       }
+      if (Object.keys(errors).length !== 0) {
+        return res.status(400)
+          .json(errors);
+      } next();
+    }
+  }
+
+  /**
+     *
+     *
+     * @param {any} req
+     * @param {any} res
+     * @returns {json} validate adding centers
+     * @memberof VAlidator
+     */
+  addCenterValidator(req, res, next) {
+    const {
+      capacity, location, features, description
+    } = req.body;
+    const errors = {};
+    if (capacity === undefined || location === undefined || features === undefined
+         || description === undefined) {
+      res.status(400)
+        .json({
+          message: 'All or some of the field is/are undefined',
+        });
+    } else {
+      // check for title
+      if (!validator.isEmpty(capacity)) {
+        if (!validator.isNumeric(capacity)) {
+          errors.capacity = 'Enter a number';
+        }
+      } else {
+        errors.capacity = 'Capacity is required';
+      }
+
+      // check for location
+      if (!validator.isEmpty(location)) {
+        if (!validator.isAlpha(location)) {
+          errors.location = 'Enter a location';
+        }
+      } else {
+        errors.location = 'Location is required';
+      }
+
+      // check for features
+      if (!validator.isEmpty(features)) {
+        if (!validator.isAlpha(features)) {
+          errors.features = 'Enter features';
+        }
+      } else {
+        errors.features = 'Feature is required';
+      }
+
+      // check for description
+      if (!validator.isEmpty(description)) {
+        if (!validator.isLength(description, { min: 25, max: undefined })) {
+          errors.description = 'description must not be less than 40 characters';
+        }
+      } else {
+        errors.description = 'description of event is required';
+      }
+
+
       if (Object.keys(errors).length !== 0) {
         return res.status(400)
           .json(errors);
